@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.ball {
+  width: 25rem;
+
+  position: fixed;
+  left: 30%;
+  top: calc(60% - 10rem);
+
+  animation-duration: 1.5s;
+  animation-name: cookiepop;
+  animation-iteration-count: 1;
+}
+
+@keyframes cookiepop {
+  0% {
+    left: calc(30%);
+    top: 100%;
+  }
+
+  100% {
+    left: calc(30%);
+    top: calc(60% - 10rem);
+  }
+}
+
+.snurr {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform: rotate(3deg); */
+  /* transform: rotate(0.3rad);/ */
+  /* transform: rotate(3grad); */
+  /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
