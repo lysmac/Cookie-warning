@@ -1,3 +1,3 @@
 # cookie-warning
 
-hahah testar lite
+Cookie warning made to practice CSS-animations with keyframes
